@@ -15,7 +15,7 @@
     <hr>
     <h3>{{text}}</h3>
     {% else %}
-        <form method="POST" action="/workapp/exercise2/">
+        <form method="POST" action="/workapp/exercise2/"> <!-- POST 방식은 외부로 보여지지 않음 보완상 좋음-->
             {% csrf_token %}
             <h1>의견을 남겨 주세요</h1>
             <hr>

@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'basesimple.html' %}
+
+{% block mycontent %}
+    <h1>{{name}} 상품을 1개 선택하셨군요...</h1>
+    <a href="/workapp/product1/"> 상품선택화면으로</a>
+{% endblock %}

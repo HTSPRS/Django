@@ -1,0 +1,33 @@
+{% extends 'basesimple.html' %}
+
+{% block mycontent %}
+
+        <style>
+         img {
+            image-align : center;
+            border : 3px solid black;
+            box-shadow: 4px 4px 3px grey;
+            width : 150px;
+            margin-right: 25px;
+         }
+        </style>
+
+        <h1 style="text-align:center">원하는 상품을 클릭해주세요</h1>
+        <hr>
+
+        <div style="text-align:center">
+            <a href="/workapp/basket1/p001"><img src="/static/images/1.jpg"></a>
+            <a href="/workapp/basket1/p002"><img src="/static/images/2.jpg"></a>
+            <a href="/workapp/basket1/p003"><img src="/static/images/3.jpg"></a>
+            <a href="/workapp/basket1/p004"><img src="/static/images/4.jpg"></a>
+            <a href="/workapp/basket1/p005"><img src="/static/images/5.jpg"></a>
+        </div>
+        <div  style="text-align:center">
+            <a href="/workapp/basket1/p006"><img src="/static/images/6.jpg"></a>
+            <a href="/workapp/basket1/p007"><img src="/static/images/7.jpg"></a>
+            <a href="/workapp/basket1/p008"><img src="/static/images/8.jpg"></a>
+            <a href="/workapp/basket1/p009"><img src="/static/images/9.jpg"></a>
+            <a href="/workapp/basket1/p010"><img src="/static/images/10.jpg"></a>
+        </div>
+
+{% endblock %}

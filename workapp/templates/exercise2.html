@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span {color : green}
+
+    </style>
+</head>
+<body>
+<p>
+    {% if name and text %}
+    <h2><span>{{name}}</span>님이 남긴 글입니다.</h2>
+    <hr>
+    <h3>{{text}}</h3>
+    {% else %}
+        <form method="POST" action="/workapp/exercise2/"> <!-- POST 방식은 외부로 보여지지 않음 보완상 좋음-->
+            {% csrf_token %}
+            <h1>의견을 남겨 주세요</h1>
+            <hr>
+            <input type="text" name="nm" placeholder="작성자 이름을 입력하세요" required><br>
+            <textarea name="cnt" rows="20" cols="50" placeholder="자신의 의견을 간단히 적어주세요" required></textarea><br>
+            <input type="submit" value="제출">
+            <input type="reset" value="재작성">
+        </form>
+    {% endif %}
+</p>
+
+</body>
+</html>

@@ -5,6 +5,8 @@ from django.http import HttpResponse, JsonResponse
 from django.template import loader
 import random
 
-def index(request):
-    return render(request, 'index.html')
+def index1(request):
+    return render(request, 'index1.html')
+
+
 # Create your views here.
